@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        *:focus{
+            outline: none;
+        }
+
+        :is(html, body) {
+            height: 100%;
+        }
+
+        body {
+            display: grid;
+            place-items: center;
+            margin: 0;
+            padding: 0 30px;
+            background-color: #da99ff;
+            background-color: hsla(0, 100%, 50%, 1);
+            background-image:
+                radial-gradient(at 40% 20%, hsla(28, 100%, 74%, 1) 0px, transparent 50%),
+                radial-gradient(at 80% 0%, hsla(189, 100%, 56%, 1) 0px, transparent 50%),
+                radial-gradient(at 0% 50%, hsla(355, 100%, 93%, 1) 0px, transparent 50%),
+                radial-gradient(at 80% 50%, hsla(340, 100%, 76%, 1) 0px, transparent 50%),
+                radial-gradient(at 0% 100%, hsla(22, 100%, 77%, 1) 0px, transparent 50%),
+                radial-gradient(at 80% 100%, hsla(242, 100%, 70%, 1) 0px, transparent 50%),
+                radial-gradient(at 0% 0%, hsla(343, 100%, 76%, 1) 0px, transparent 50%);
+        }
+        .login {
+            position: fixed;
+            padding: 40px 30px;
+            background-color: #ffffff;
+            border-radius: 20px;
+        }
+        .logo{
+            margin-bottom: 60px;
+        }
+        .logo ul{
+            display: flex;
+        }
+        .logo li{
+            position: relative;
+            list-style: none;
+            width: 50px;
+            margin: 0px 2px;
+        }
+        .logo ul div {
+            height: 5px;
+            margin: auto;
+        }
+        h1{
+            text-align: center;
+        }
+        label {
+            font-family: monospace;
+            font-size: 12px;
+        }
+        input{
+            border: none;
+            border-bottom: 1px solid gray;
+            padding-right: 50px;
+            text-align: left;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .forget_pass, a{
+            text-align: right;
+            color: black;
+            text-decoration: none;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        button{
+            background-image:
+                radial-gradient(at 40% 20%, hsla(28, 100%, 74%, 1) 0px, transparent 50%),
+                radial-gradient(at 80% 0%, hsla(189, 100%, 56%, 1) 0px, transparent 50%),
+                radial-gradient(at 0% 50%, hsla(355, 100%, 93%, 1) 0px, transparent 50%),
+                radial-gradient(at 80% 50%, hsla(340, 100%, 76%, 1) 0px, transparent 50%),
+                radial-gradient(at 0% 100%, hsla(22, 100%, 77%, 1) 0px, transparent 50%),
+                radial-gradient(at 80% 100%, hsla(242, 100%, 70%, 1) 0px, transparent 50%),
+                radial-gradient(at 0% 0%, hsla(343, 100%, 76%, 1) 0px, transparent 50%);
+            border-radius: 20px;
+            border: none;
+            padding: 3px 90px;
+            margin-top: 10px;
+        }
+        p{
+            text-align: center;
+            font-size: 12px;
+        }
+        .sign_up, a{
+            text-align: center;
+            color: black;
+            text-decoration: none;
+            font-size: 12px;
+        }
+    </style>
+    <script>
+        function valid() {
+            alert("Done");
+            document.write("<h1><l>Your form is successfully submitted</l></h1>");
+        }
+    </script>
+</head>
+
+<body>
+    <div class="login">
+        <h1>Login</h1>
+        <form class="login_form">
+            <div class="label"><label>Username</label></div>
+            <span class="fa fa-user-o"></span><input type="text" placeholder="Type your username">
+            <div class="label"><label>Password</label></div>
+            <span class="fa fa-lock" aria-hidden="true"></span><input type="password" placeholder="Type your password">
+            <div class="forget_pass"><a href="#">Forget password ?</a></div>
+            <div><button type="submit" name="submit" id="submit" onclick="valid();">Submit</button></div>
+        </form>
+        <p>Or Sign Up using</p>
+        <div class="logo">
+            <ul>
+                
+                <li>
+                    <a href="#">
+                        <span class="fa fa-google fa-2x"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+
+                        <span class="fa fa-twitter fa-2x" aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="fa fa-facebook fa-2x" aria-hidden="true"></span>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+        <p>Or Sign Up Using</p>
+        <div class="sign_up"><a href="#">SIGN UP</a></div>
+    </div>
+</body>
+
+</html>
