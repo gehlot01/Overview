@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(women-3118387_1920.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #submit{
+            background-color: rgb(144, 232, 13);
+        }
+        #reset{
+            background-color: red;
+        }
+        input{
+            font-size: 20px;
+            width: 500px;
+            height: 45px;
+            text-align: center;
+            border-radius: 20px;
+            margin: 4px;
+            font-style: italic;
+            font-family: Comic Sans MS;
+        }
+        h3{
+            color: white;
+            font-family: 'Pangolin', cursive;
+        }
+.main{
+    background-color: black;
+    width: 850px;
+    height: 430px;
+    border: 10px groove rgb(215, 210, 210);
+    margin: 80px;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 10px;
+    
+}
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h3>Join the emerging Blog on Web Development now!</h3>
+        <form>
+            <div><input type="text" placeholder="Enter your Full Name"></div>
+            <div><input type="text" placeholder="Enter your Area of Interest"></div>
+            <div><input type="email" placeholder="Enter your email address"></div>
+            <div><input type="number" placeholder="Enter your Mobile Number  " min="1111111111" max="9999999999"></div>
+            <div><Input type="submit" name="submit" value="Submit" id="submit" onclick="valid();" /></div>
+            <div><Input type="reset" name="reset" value="Reset" id="reset" onclick="warn();" /></div>
+        </form>
+</div>
+    <script>
+        function valid() {
+            alert("Done");
+            document.write("<h1><l>Your form is successfully submitted</l></h1>");
+        }
+        function warn() {
+            alert("Your fields have been clear");
+        }
+    </script>
+</body>
+</html>
